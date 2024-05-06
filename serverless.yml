@@ -1,0 +1,14 @@
+
+service: lambda-cold-start
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  memorySize: 1769
+
+functions:
+  hello:
+    handler: handler.hello
+    url: true
+
