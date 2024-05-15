@@ -6,6 +6,8 @@ provider:
   name: aws
   runtime: nodejs20.x
   memorySize: 1769
+  environment:
+    AJ_TEST: true
 
 functions:
   hello:
